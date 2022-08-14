@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 17</title>
+</head>
+<body>
+    <h1>Task 17</h1>
+    <p>
+        Дан размер файла в байтах. Используя операцию деления нацело, найти количество полных килобайтов, которые занимает данный файл (1 килобайт = 1024 байта)
+    </p>
+    <script>
+        fileSize = 16000;
+        function toKb(b){
+            return (Math.trunc(b/1024))
+        }
+        console.log(toKb(fileSize));
+    </script>
+</body>
+</html>
