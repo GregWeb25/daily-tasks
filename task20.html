@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 20</title>
+</head>
+<body>
+    <h1>Task 20</h1>
+    <p>
+        Описать процедуру PowerA3(A, B), вычисляющую третью степень (куб) числа A и возвращающую ее в переменной B (A — входной, B — выходной параметр; оба параметра являются вещественными). С помощью этой процедуры найти третьи степени пяти любых чисел
+    </p>
+    <script>
+        const numbers = [0,1,2,3,4];
+
+        function PowerA3(A){
+            return A ** 3;
+        }
+
+        for (let i = 0; i < numbers.length; i++) {
+            console.log(PowerA3(numbers[i])); 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 21</title>
+</head>
+<body>
+    <h1>Task 21</h1>
+    <p>
+        Описать функцию CircleS(R) вещественного типа, находящую площадь круга радиуса R (R — вещественное). С помощью этой функции найти площади трех кругов с любыми радиусами. Площадь круга радиуса R вычисляется по формуле S=π*R^2. В качестве значения π использовать 3.14
+    </p>
+    <script>
+        const circlesRadius = [ 8, 12, 2];
+
+        function CircleS(R){
+            return Math.floor(Math.PI*R**2);
+        }
+
+        for (let i = 0; i < circlesRadius.length; i++) {
+            console.log(`Circle №${i+1} S = ` + CircleS(circlesRadius[i])); 
+        }
+    </script>
+</body>
+</html>
