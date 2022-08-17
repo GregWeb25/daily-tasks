@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 28</title>
+</head>
+<body>
+    <h1>Task 28</h1>
+    <p>
+        Даны три целых числа: A, B, C. Проверить истинность высказывания: «Справедливо двойное неравенство A < B < C»
+    </p>
+    <script>
+        const A = 3;
+        const B = 6;
+        const C = 9;
+        function increasing(a,b,c){
+            if(a<b && b<c){
+                return true;
+            }
+            return false;
+        }
+        console.log(increasing(A,B,C));
+    </script>
+</body>
+</html>
