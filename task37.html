@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 37</title>
+</head>
+<body>
+    <h1>Task 37</h1>
+    <p>
+        Дано вещественное число — цена 1 кг конфет. Вывести стоимость 1.2, 1.4, ..., 2 кг конфет
+    </p>
+    <script>
+        const cost = 300;
+        for(let i = 1.2; i<=2; i = i + 0.2){
+            console.log("i: "+i)
+            console.log("cost: " + Math.round(cost*i));
+            console.log('-------------------------------');
+        }
+    </script>
+</body>
+</html>
