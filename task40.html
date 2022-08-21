@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 40</title>
+</head>
+<body>
+    <h1>Task 40</h1>
+    <p>
+        Описать функцию SumRange(A, B) целого типа, находящую сумму всех целых чисел от A до B включительно (A и B — целые). Если A > B, то функция возвращает 0. С помощью этой функции найти суммы чисел от A до B и от B до C, если даны числа A, B, C
+    </p>
+    <script>
+        const A = 3;
+        const B = 5;
+        const C = 7;
+        function sumFromAtoB(a,b){
+            let sum = 0;
+            for (let i = a; i <= b; i++) {
+                sum = sum + i;
+            }
+            return sum;
+        }
+        function SumRange(a, b, c){
+            if(c){
+                if(a>b || b>c){
+                return 0;
+                }
+                const sumAB = sumFromAtoB(a,b);
+                const sumBC = sumFromAtoB(b,c);
+                return [sumAB, sumBC];
+            }
+            if(a>b){
+                return 0; 
+            }
+            return sumFromAtoB(a,b);
+        }
+        console.log(SumRange(A,B,C));
+    </script>
+</body>
+</html>

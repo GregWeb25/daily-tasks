@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 39</title>
+</head>
+<body>
+    <h1>Task 39</h1>
+    <p>
+        Описать процедуру PowerA234(A, B, C , D), вычисляющую вторую, третью и четвертую степень числа A и возвращающую эти степени соответственно в переменных B, C и D (A — входной, B , C, D — выходные параметры; все параметры являются вещественными). С помощью этой процедуры найти вторую, третью и четвертую степень пяти данных чисел
+    </p>
+    <script>
+        const A = 3;
+        function PowerA234(a){
+            const B = Math.pow(a, 2);
+            const C = Math.pow(a, 3);
+            const D = Math.pow(a, 4);
+            return [B, C, D];
+        }
+        console.log(PowerA234(A));
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 38</title>
+</head>
+<body>
+    <h1>Task 38</h1>
+    <p>
+        Дано целое число N (> 0). Если оно является степенью числа 3, то вывести True, если не является — вывести False
+    </p>
+    <script>
+        const N = 81;
+        function isPow3(n){
+            let i = 1;
+            while (i < n) {
+                if(Math.pow(3, i) == n){
+                    return true;
+                }
+                i++;
+            }
+            return false;
+        }
+        console.log(isPow3(N));
+    </script>
+</body>
+</html>
