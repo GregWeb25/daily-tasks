@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 41</title>
+</head>
+<body>
+    <h1>Task 41</h1>
+    <p>
+        Описать функцию Even(K) логического типа, возвращающую True, если целый параметр K является четным, и False в противном случае. С ее помощью найти количество четных чисел в наборе из 10 целых чисел
+    </p>
+    <script>
+        const arr = [2,4,5,6,7,8,9,10,11,12];
+        let evenCount = 0;
+        function Even(k){
+            return (k%2)? false : true; 
+        }
+
+        for(let i = 0; i < arr.length; i++){
+            if(Even(arr[i])) evenCount++ ;
+        }
+        console.log(evenCount);
+
+
+    </script>
+</body>
+</html>
