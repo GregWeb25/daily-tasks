@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 48</title>
+</head>
+<body>
+    <h1>Task 48</h1>
+    <p>
+        Описать функцию Quarter(x, y) целого типа, определяющую номер координатной четверти, в которой находится точка с ненулевыми вещественными координатами (x , y). С помощью этой функции найти номера координатных четвертей для трех точек с данными ненулевыми координатами
+    </p>
+    <script>
+        const X = 76;
+        const Y = -40;
+        function Quarter(x, y){
+            if(x>0 && y>0){
+                return 1;
+            }
+            if(x<0 && y>0){
+                return 2;
+            }
+            if(x<0 && y<0){
+                return 3;
+            }
+            if(x>0 && y<0){
+                return 4;
+            }
+               
+        }
+        console.log(Quarter(X,Y));
+
+    </script>
+</body>
+</html>
