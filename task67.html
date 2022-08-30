@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 67</title>
+</head>
+<body>
+    <h1>Task 67</h1>
+    <p>
+        Дан номер месяца — целое число в диапазоне 1–12 (1 — январь, 2 — февраль и т. д.). Определить количество дней в этом месяце для не високосного года
+    </p>
+    <script>
+        const mounth = 12;
+        switch(mounth){
+            case 2:
+                console.log(28);
+            break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                console.log(30);
+            break;
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                console.log(31);
+            break;
+
+        }
+    </script>
+</body>
+</html>
