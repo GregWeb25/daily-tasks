@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 75</title>
+</head>
+<body>
+    <h1>Task 75</h1>
+    <p>
+        Дано целое число N (> 0). Сформировать и вывести целочисленный массив размера N, содержащий степени двойки от первой до N-й: 2, 4, 8, 16, ...
+
+    </p>
+    <script>
+        const N = 10;
+        let arr = [];
+        for (let i = 0; i < N; i++) {
+            arr.push(pow(2,i));
+        }
+        console.log(arr);
+    </script>
+</body>
+</html>

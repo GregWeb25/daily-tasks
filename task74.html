@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 74</title>
+</head>
+<body>
+    <h1>Task 74</h1>
+    <p>
+        Дано целое число N и набор из N прямоугольников, заданных своими сторонами — парами чисел (a, b). Найти минимальную площадь прямоугольника из данного набора
+    </p>
+    <script>
+        const arr = [
+            {a: 3, b: 5},
+            {a: 7, b: 2},
+            {a: 4, b: 2},
+            {a: 5, b: 5},
+        ]
+        let min = Infinity;
+        for (let i = 0; i < arr.length; i++) {
+            let S = arr[i].a * arr[i].b;
+            console.log(i+' S = ' + S);
+            if (S<min){
+                min = S;
+            }
+        }
+        console.log(min);
+    </script>
+</body>
+</html>
