@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 68</title>
+</head>
+<body>
+    <h1>Task 68</h1>
+    <p>
+        Даны три переменные вещественного типа: A, B, C. Если их значения упорядочены по возрастанию, то удвоить их; в противном случае заменить значение каждой переменной на противоположное. Вывести новые значения переменных A, B, C
+    </p>
+    <script>
+        let A = 31;
+        let B = 39;
+        let C = 40;
+        let result = 0;
+        if(A<B && B<C){
+            A *= 2;
+            B *= 2;
+            C *= 2;
+        } else{
+            result = A;
+            A = C;
+            C = result;
+        }
+        console.log('A='+A+' B='+B+" C="+C);
+    </script>
+</body>
+</html>

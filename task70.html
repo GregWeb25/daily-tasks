@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 70</title>
+</head>
+<body>
+    <h1>Task 70</h1>
+    <p>
+        Единицы длины пронумерованы следующим образом: 1 — дециметр, 2 — километр, 3 — метр, 4 — миллиметр, 5 — сантиметр. Дан номер единицы длины (целое число в диапазоне 1–5) и длина отрезка в этих единицах (вещественное число). Найти длину отрезка в метрах
+    </p>
+    <script>
+        const length = 1000;
+        const type = 4;
+        switch(type){
+            case 1:
+                console.log(length/10 + ' if D');
+            break;
+            case 2:
+                console.log(length*1000 + ' if Km');
+            break;
+            case 3:
+                console.log(length + ' if M');
+            break;
+            case 4:
+                console.log(length/1000 + 'if Ml');
+            break;
+            case 5:
+                console.log(length/100 + ' if Sm');
+            break;
+        }
+    </script>
+</body>
+</html>
