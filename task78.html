@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 78</title>
+</head>
+<body>
+    <h1>Task 78</h1>
+    <p>
+        Дано целое число N (> 1), а также число A и разность D арифметической прогрессии. Сформировать и вывести массив размера N, содержащий N первых чисел данной прогрессии: A, A + D, A + 2*D, A + 3*D, ... 
+    </p>
+    <script>
+        const N = 10;
+        const A = 3;
+        const D = 7;
+        let result = [A];
+        for (let i = 1; i <= N; i++) {
+            result.push(A+i*D) 
+        }
+        console.log(result);
+    </script>
+</body>
+</html>

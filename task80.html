@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 80</title>
+</head>
+<body>
+    <h1>Task 80</h1>
+    <p>
+        Дано целое число N и набор из N чисел. Найти номер минимального элемента из данного набора
+    </p>
+    <script>
+        const arr = [10,9,8,0,6,5,4,3,2,1];
+        let min = Infinity;
+        let index = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if(arr[i]<min){
+                min = arr[i]
+                index = i;
+            }
+        }
+        console.log(index);
+    </script>
+</body>
+</html>
