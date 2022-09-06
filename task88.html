@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 88</title>
+</head>
+<body>
+    <h1>Task 88</h1>
+    <p>
+        Дан символ C, изображающий цифру или букву (латинскую или русскую). Если C изображает цифру, то вывести строку «digit», если латинскую букву — вывести строку «lat», если русскую — вывести строку «rus»
+    </p>
+    <script>
+        const C = 'a';
+        let code = C.charCodeAt();
+        if (code>=48 && code<=57) {
+            console.log('digit');
+        }
+        if (code>=65 && code<=122) {
+            console.log('lat');
+        }
+        if (code>=128 && code<=175 || code>=224 && code<=241) {
+            console.log('rus');
+        }
+    </script>
+</body>
+</html>

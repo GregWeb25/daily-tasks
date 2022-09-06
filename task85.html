@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 85</title>
+</head>
+<body>
+    <h1>Task 85</h1>
+    <p>
+        Дано целое число N (1 ≤ N ≤ 26). Вывести N последних строчных (то есть маленьких) букв латинского алфавита в обратном порядке (начиная с буквы «z»)
+    </p>
+    <script>
+        const N = 21;
+
+        if(N>=1 && N<=26){
+            for (let i = 0; i < N; i++) {
+                console.log(String.fromCharCode(122-i));
+                
+            }
+        }
+    </script>
+</body>
+</html>

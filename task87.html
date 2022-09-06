@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 87</title>
+</head>
+<body>
+    <h1>Task 87</h1>
+    <p>
+        Дан массив ненулевых целых чисел размера 10. Вывести значение первого элемента, значение которого меньше чем у элемента с индексом 9. Если таких элементов нет, то вывести 0
+    </p>
+    <script>
+        const arr = [1,21,3,4,5,6,72,8,9,10];
+        const element = arr[9];
+        let biggerThenElement = 0;
+        console.log(arr[0]);
+        for (let i = 0; i < arr.length; i++) {
+            if(arr[i] > element && arr[i] > biggerThenElement){
+                biggerThenElement = arr[i];
+            } 
+        }
+        console.log(biggerThenElement);
+    </script>
+</body>
+</html>

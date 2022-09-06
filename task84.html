@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 84</title>
+</head>
+<body>
+    <h1>Task 84</h1>
+    <p>
+        Дан целочисленный массив размера N. Вывести все содержащиеся в данном массиве нечетные числа в порядке возрастания их индексов, а также их количество K
+    </p>
+    <script>
+        let arr = [1,2,3,4,5,6,7,8,9];
+
+            arr = arr.filter(item => {
+                if(item%2 == 1){
+                    return item;
+                }
+            })
+
+        const K = arr.length;
+        console.log(arr+', K:'+K); 
+
+    </script>
+</body>
+</html>

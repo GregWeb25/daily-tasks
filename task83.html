@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 83</title>
+</head>
+<body>
+    <h1>Task 83</h1>
+    <p>
+        Дано целое число N и набор из N пар чисел (m, v) — данные о массе m и объеме v деталей, изготовленных из различных материалов. Вывести номер детали, изготовленной из материала максимальной плотности, а также величину этой максимальной плотности. Плотность P вычисляется по формуле P = m/v
+
+    </p>
+    <script>
+        const arr = [
+            {m:3, v:5},
+            {m:15, v:5},
+            {m:24, v:8},
+            {m:34, v:14},
+            {m:12, v:7},
+        ];
+        let maxP = 0;
+        let index = 0;
+        for (let i = 0; i < arr.length; i++) {
+            let P = (arr[i].m)/(arr[i].v);
+            if (maxP < P ) {
+                maxP = P ;   
+                index = i;
+            }
+        }
+        console.log('max P ' + index + ': ' +maxP );
+    </script>
+</body>
+</html>
