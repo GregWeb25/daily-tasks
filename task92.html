@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 92</title>
+</head>
+<body>
+    <h1>Task 92</h1>
+    <p>
+        Дана строка. Подсчитать количество содержащихся в ней цифр
+    </p>
+    <script>
+        const str = '1ab1cd2efg3';
+        let numbersCount = 0;
+        for (let i = 0; i < str.length; i++) {
+            if(str.substr(i,1).charCodeAt() >= 48 &&  str.substr(i,1).charCodeAt() <= 57)
+            numbersCount++
+        }
+        console.log(numbersCount);
+    </script>
+</body>
+</html>
