@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 95</title>
+</head>
+<body>
+    <h1>Task 95</h1>
+    <p>
+        Дана строка. Подсчитать количество содержащихся в ней прописных латинских букв
+    </p>
+    <script>
+        const a ='1adAS233fdSQ'
+        let count = 0;
+        for (let i = 0; i < a.length; i++) {
+            const code = a[i].charCodeAt(); 
+            if (code>=65 && code<=122) {
+           count++
+            }
+        }
+        console.log(count);
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 98</title>
+</head>
+<body>
+    <h1>Task 98</h1>
+    <p>
+        Задача 98: Дана строка. Подсчитать общее количество содержащихся в ней строчных латинских и русских букв
+    </p>
+    <script>
+        const a ='1adAS233fdSQ'
+        let count = 0;
+        for (let i = 0; i < a.length; i++) {
+            const code = a[i].charCodeAt(); 
+            if (code>=65 && code<=122 || code>=128 && code<=175 || code>=224 && code<=241) {
+           count++
+            }
+        }
+        console.log(count);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 94</title>
+</head>
+<body>
+    <h1>Task 94</h1>
+    <p>
+        Дано трехзначное число. Вывести вначале его последнюю цифру (единицы), а затем — его среднюю цифру (десятки)
+    </p>
+    <script>
+        let a = 671;
+        a = String(a)
+        const last = a.substr(2,1);
+        const midle = a.substr(1,1);
+        console.log(last);
+        console.log(midle);
+    </script>
+</body>
+</html>
